@@ -1,0 +1,427 @@
+//首页
+#home{
+    width: 100%;
+    height: auto;
+    .bgimg{
+//      background:url(../pic/home/bigbg0.png) no-repeat;
+        background-size: 100% 100%;
+        height: 964px;
+        margin-top: -84px;
+        position: relative;
+        overflow: hidden;
+        //背景轮播图
+        #swiper-container2{
+            width: 100%;
+            height: 964px;
+            .swiper-wrapper{
+                width: 100%;
+                height: 964px;
+                .swiper-slider{
+                    width: 100%;
+                    height: 964px;
+                    img{
+                        width: 100%;
+                        height: 964px;
+                    }
+                }
+            }
+        }
+//      3d轮播图
+        .homeswiper{
+            width: 100%;
+            height: 764px;
+            padding-top: 154px;
+            padding-bottom: 82px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            #swiper-container3{
+                width: 1292px;
+                height: 528px;
+                margin: auto;
+                .swiper-wrapper{
+                    width: 1292px;
+                    height: 528px;
+                    .swiper-slide{
+                        width: 390px;
+                        height: 528px;
+                        img{
+                            width: 390px;
+                            height: 528px;
+                        }
+    //                  小视频播放按钮
+                        .playvideoicon{
+                            background: url(../pic/home/videoplayicon.png) no-repeat;
+                            height: 122px;
+                            width: 122px;
+                            position: absolute;
+                            top: 203px;
+                            left: 134px;
+                            cursor: pointer;
+                        }
+                    }  
+                }
+//  //          轮播按钮
+//              .swiper-button-prev{
+//                  background: url(../pic/home/goleft.png) no-repeat;
+//                  width: 32px;
+//                  height:68px;
+//                  cursor: pointer;
+//              }
+//              .swiper-button-next{
+//                  background: url(../pic/home/goright.png) no-repeat;
+//                  width: 32px;
+//                  height:68px;
+//                  cursor: pointer;
+//              }
+            }
+        }
+//      底部阴影
+        .bottomshadowbox{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            .bottomshadow{
+                background: url(../pic/home/yinying.png) no-repeat;
+                width: 1260px;
+                height: 200px;
+                margin: auto;
+            }
+        }
+    }
+    
+//  主要内容
+    .maincontent{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        margin-top: -185px;
+        z-index: 50;
+        position: relative;
+//      background-color: skyblue;
+        
+//      影视专栏
+        .moviecolumn{
+            width: 1200px;
+            height: 366px;
+//              标题
+            .contenttitle{
+                width: 100%;
+                height: 66px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                img{
+                    width: 182px;
+                    height: 36px;               
+                }
+                span{
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+//          电影列表
+            .movielists{
+                width: 1200px;
+                height: 300px;
+                overflow: hidden;
+                .movielist:not(.lastlist){
+                    margin-right: 10px;
+                }
+                .movielist{
+                    float: left;
+                    width: 393px;
+                    height: 300px;
+                    img{
+                        display: block;
+                    }
+                    .movieintroduction{
+                        height: 70px;
+                        width: 393px;
+                        background-color: white;
+                        .centerintroduce{
+                            padding-top: 10px;
+                            width: 388px;
+                            height: 70px;
+                            margin: auto;
+                            .introduction{
+                                font-size: 16px;
+                                color: #3e3e3e;
+                            }
+                            .fengexian{
+                                background: url(../pic/home/jianbianxian.png) no-repeat;
+                                width: 388px;
+                                height: 1px;
+                                margin-top: 5px;
+                                margin-bottom: 6px;
+                            }
+                            .information{
+                                font-size: 11px;
+                                color: #3e3e3e;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+//      星装秀场
+        .dresscolumn{
+            width: 1200px;
+            height: 488px;
+            .contenttitle{
+                width: 100%;
+                height: 66px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                img{
+                    width: 182px;
+                    height: 36px;               
+                }
+                span{
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+            
+        }
+//      旅游在线
+        .tourismcolumn{
+            width: 1200px;
+            height: 680px;
+            overflow: hidden;
+//          标题
+            .contents{
+                width: 100%;
+                height: 66px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                img{
+                    width: 182px;
+                    height: 36px;               
+                }
+                span{
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+//          左边大图
+            .lefttourism{
+                float: left;
+                width: 806px;
+                height: 614px;
+                position: relative;
+//              上图
+                .lefttop{
+                    width: 806px;
+                    height: 352px;
+                    margin-bottom: 9px;
+                    overflow: hidden;
+                    .scalebg{
+                        background: url(../pic/home/xfnf.png) no-repeat;
+                        width: 806px;
+                        height: 352px;
+//                      transition:width .5s, height .5s,transform .5s;
+                    }
+//                  缩放
+//                  .scalebg:hover{
+//                      width: inherit;
+//                      height: inherit;
+//                      transform:scale(1.02,1.02);
+//                  }
+                    .miaoshu{
+                        position: absolute;
+                        display: block;
+                        top: 302px;
+                        left: 0;
+                        width: 806px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: white;
+                        font-size: 16px;
+                        background-color: rgba(0,0,0,0.3);
+                    }
+                }
+//              下图
+                .leftbottom{
+                    background: url(../pic/home/xiaojiaoruo.png) no-repeat;
+                    width: 806px;
+                    height: 253px;
+                    padding-top: 31px;
+                    padding-left: 373px;
+                    .smallvideo{
+                        background: url(../pic/home/smallvideo.png) -36px -18px no-repeat;
+                        width: 352px;
+                        height: 188px;
+                        padding-left: 134px;
+                        padding-top: 52px;
+                        z-index: 10;
+                        .smallvideoplayicon{
+                            background: url(../pic/home/playicon.png) no-repeat;
+                            width: 84px;
+                            height: 84px;
+                            z-index: 11;
+                        }
+                    }
+                }
+            }
+            //右边图
+            .righttourism{
+                float: right;
+                width: 385px;
+                height: 614px;
+                .tourismlist{
+                    width: 385px;
+                    height: 206px;
+                    margin-bottom: 6px;
+                    position: relative;
+                    img{
+                        width: 385px;
+                        height: 206px;
+                    }
+                    .yiriyou{
+                        background: url(../pic/home/yiriyoujianbian.png) no-repeat;
+                        width: 385px;
+                        height: 45px;
+                        color: white;
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 45px;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+                }
+                .xiangxilist{
+                    width: 385px;
+                    height: 188px;
+                    position: relative;
+                    img{
+                        width: 385px;
+                        height: 188px;
+                    }
+                    .xiangxi{
+                        background: url(../pic/home/xiangxijianbian.png) -1px no-repeat;
+                        width: 385px;
+                        height: 45px;
+                        color: white;
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 45px;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+//      商品
+        .dapei{
+            width: 1200px;
+            height: 1476px;
+            overflow: hidden;
+            position: relative;
+            //          标题
+            .contenttitle{
+                width: 100%;
+                height: 66px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                img{
+                    width: 182px;
+                    height: 36px;               
+                }
+                span{
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+//          商品图 ul
+            .shoplists{
+                width: 1218px;
+                height: auto;
+                font-family: "microsoft yahei";
+                position: absolute;
+                left: -18px;
+//              商品 li
+                .shoplist{
+                    overflow: hidden;
+                    width: 388px;
+                    height: 456px;
+                    padding: 8px 0 0 8px;
+                    background-color: white;
+                    margin-left: 18px;
+                    margin-bottom: 10px;
+                    float: left;
+                    border: 2px solid white;
+                    img{
+                        width: 368px;
+                        height: 357px;
+                    }
+//                  商品名 
+                    .shopins{
+                        width: 368px;
+                        height: 40px;
+                        margin-top: 5px;
+                        margin-bottom: 3px;
+                        span{
+                            color: #3E3E3E;
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        span:hover{
+                            color: darkred;
+                        }
+                        img{
+                            width: 25px;
+                            height: 10px;
+                        }
+                    }
+//                  商品价格
+                    .price{
+                        display: inline-block;
+                        width: 268px;
+                        height: 30px;
+                        .newprice{
+                            color: rgb(236,21,91);
+                            font-size: 23px;
+                            font-weight: bolder;
+                        }
+                        .oldprice{
+                            color: rgb(162,162,162);
+                        }
+                    }
+//                  点击购买
+                    .clickbuyit{
+                        display: inline-block;
+                        width: 83px;
+                        height: 27px;
+                        background-color: rgb(236,21,91);
+                        border-radius: 5px;
+                        line-height: 27px;
+                        text-align: center;
+                        span{
+                            color: white;
+                            font-size: 14px;
+                        }
+                        span:before{
+                            content: url(../pic/home/heart.png);
+                            display: inline-block;
+                            width: 13px;
+                            height: 13px;
+                            margin:0 6px;
+                        }
+                    }
+                }
+                .shoplist:hover{
+                    border: 2px solid rgb(236,21,91);
+                }
+            }
+        }
+    }
+    
+    
+}
